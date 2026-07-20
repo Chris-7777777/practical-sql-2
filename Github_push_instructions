@@ -1,0 +1,23 @@
+# Using BASH terminal to upload to Git hub
+1. Open Your Project in VS Code
+Make sure you have your personal-ai-data-agent folder open in VS Code.
+2. Open the Terminal
+Go to Terminal → New Terminal at the bottom.
+3. Run These Commands One by One
+Copy and paste one line at a time, then press Enter after each:
+Bash
+# 1. Make sure you're in the right folder
+cd "C:\Path\To\your\personal-ai-data-agent"   # ← Change this if needed
+# 2. Initialize Git (if not already done)
+git init
+# 3. Name the main branch
+git branch -M main
+# 4. Connect to your GitHub repo
+git remote add origin https://github.com/YOUR-USERNAME/personal-ai-data-agent.git
+# 5. Add all your files
+git add .
+# 6. Commit your Day 1 work
+git commit -m "Day 1: Complete setup with hello_world.py and folder structure"
+# 7. Push to GitHub (this is the important one)
+git push -u origin main --force
+# The --force flag will replace everything currently on GitHub with your local version. This is what you asked for (“clean out my GitHub folder”).
